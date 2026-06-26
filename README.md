@@ -33,21 +33,28 @@ public class Zddgg {
 
 ## ⚡ Tech Stack
 
-<p align="center">
-
-<img src="https://skillicons.dev/icons?i=java,spring,vue,ts,js,nodejs,go,androidstudio,docker,kubernetes,redis,mysql,nginx,linux,git"/>
-
-</p>
-
----
-
-## 🛰️ Request Flow
-
-<div align="center">
-
-<img src="./assets/gateway.svg" alt="API gateway request flow" width="100%"/>
-
-</div>
+<table align="center">
+  <tr>
+    <td align="right" valign="middle"><b>Languages</b></td>
+    <td align="left"><img src="https://skillicons.dev/icons?i=java,ts,js,go"/></td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle"><b>Frontend</b></td>
+    <td align="left"><img src="https://skillicons.dev/icons?i=vue,androidstudio"/></td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle"><b>Backend</b></td>
+    <td align="left"><img src="https://skillicons.dev/icons?i=spring,nodejs"/></td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle"><b>Data</b></td>
+    <td align="left"><img src="https://skillicons.dev/icons?i=redis,mysql"/></td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle"><b>Infra & Tools</b></td>
+    <td align="left"><img src="https://skillicons.dev/icons?i=docker,kubernetes,nginx,linux,git"/></td>
+  </tr>
+</table>
 
 ---
 
@@ -82,18 +89,6 @@ public class Zddgg {
 </picture>
 
 </div>
-
----
-
-## 🚀 Featured Projects
-
-<a href="https://github.com/zddgg/claude-code">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=zddgg&repo=claude-code&theme=tokyonight"/>
-</a>
-
-<a href="https://github.com/zddgg/tiny-img">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=zddgg&repo=tiny-img&theme=tokyonight"/>
-</a>
 
 ---
 
