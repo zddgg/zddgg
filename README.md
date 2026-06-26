@@ -1,132 +1,114 @@
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&duration=3000&pause=1000&color=8A2BE2&center=true&vCenter=true&width=600&lines=Hello+World+👋;I'm+zddgg;Full+Stack+Developer;API+Gateway+Architect" />
+
 <div align="center">
 
-<!-- Terminal-style header window -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:1f6feb&height=220&section=header&text=zddgg&fontSize=90&fontColor=58a6ff&fontAlignY=38&desc=Full-Stack%20Engineer&descSize=18&descColor=8b949e&descAlignY=60&animation=fadeIn" width="100%"/>
-
-<!-- Typing animation -->
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&random=false&width=620&lines=%24+whoami;%E2%86%92+a+builder+of+things+on+the+internet;%24+cat+stack.txt;%E2%86%92+TypeScript+%C2%B7+React+%C2%B7+Node;%24+uptime;++97%25+always+shipping" alt="Typing SVG" />
-</a>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=250&text=ZDDGG&fontSize=60&fontAlignY=35&color=0:0F2027,50:203A43,100:2C5364&animation=fadeIn&fontColor=ffffff"/>
 
 </div>
 
 ---
 
-<!-- Console window intro -->
-```yaml
-# ── session.log ──────────────────────────────────────────────
-user:        zddgg
-role:        full-stack engineer
-location:    Earth / Asia
-status:      building & breaking things
-philosophy:  code is craft, not cargo
-```
+<div align="center">
 
-<table>
-<tr>
-<td width="50%" valign="top">
+### 🚀 Full Stack Developer | API Gateway Architect
 
-### `~/about`
+热爱技术｜持续探索｜创造有价值的软件
 
-I'm a full-stack developer who enjoys turning ambiguous ideas into shipped products. I work across the whole stack — from database schemas and API design to pixel-perfect frontends and the deploy pipelines that glue them together.
-
-Things I care about:
-- Clean, readable code over clever code
-- DX (developer experience) as a first-class concern
-- Performance budgets you can actually defend
-- Shipping in small, honest increments
-
-</td>
-<td width="50%" valign="top">
-
-### `~/now`
-
-```text
-┌─ current focus ──────────────────┐
-│  ● distributed systems           │
-│  ● developer tooling             │
-│  ● edge / serverless runtimes    │
-└──────────────────────────────────┘
-```
-
-```text
-┌─ learning ───────────────────────┐
-│  ● Rust                          │
-│  ● systems design                │
-│  ● compilers & langs             │
-└──────────────────────────────────┘
-```
-
-</td>
-</tr>
-</table>
+</div>
 
 ---
 
-### `~/stack`
+## 👨‍💻 About Me
 
-<p>
-  <img src="https://img.shields.io/badge/Frontend-React%20%7C%20Next.js%20%7C%20Vue-61dafb?style=for-the-badge&labelColor=0d1117&color=58a6ff" alt="Frontend"/>
-  <img src="https://img.shields.io/badge/Language-TypeScript%20%7C%20JavaScript-3178c6?style=for-the-badge&labelColor=0d1117&color=3178c6" alt="Language"/>
-  <img src="https://img.shields.io/badge/Backend-Node.js%20%7C%20NestJS-339933?style=for-the-badge&labelColor=0d1117&color=399933" alt="Backend"/>
-  <img src="https://img.shields.io/badge/DB-PostgreSQL%20%7C%20Redis%20%7C%20Mongo-4169e1?style=for-the-badge&labelColor=0d1117&color=4169e1" alt="DB"/>
-  <img src="https://img.shields.io/badge/Cloud-Docker%20%7C%20K8s%20%7C%20AWS-2496ed?style=for-the-badge&labelColor=0d1117&color=2496ed" alt="Cloud"/>
-  <img src="https://img.shields.io/badge/Tools-Git%20%7C%20Vite%20%7C%20CI%2FCD-f05032?style=for-the-badge&labelColor=0d1117&color=f05032" alt="Tools"/>
+```java
+public class Zddgg {
+
+    String role = "Full Stack Developer";
+
+    String[] focus = {
+        "API Gateway",
+        "Spring Boot",
+        "Netty",
+        "Vue",
+        "Android"
+    };
+
+    String currentGoal =
+        "Build awesome products";
+
+}
+```
+
+---
+
+## ⚡ Tech Stack
+
+<p align="center">
+
+<img src="https://skillicons.dev/icons?i=java,spring,vue,ts,js,nodejs,go,androidstudio,docker,kubernetes,redis,mysql,nginx,linux,git"/>
+
 </p>
 
-<details>
-<summary><b>expand for the full inventory</b></summary>
-
-| Layer | Tools |
-| --- | --- |
-| Languages | TypeScript · JavaScript · Go · Python · SQL |
-| Frontend | React · Next.js · Vue · Tailwind · Zustand · Redux |
-| Backend | Node.js · NestJS · Express · FastAPI · gRPC |
-| Data | PostgreSQL · MySQL · Redis · MongoDB · Prisma · TypeORM |
-| Infra | Docker · Kubernetes · AWS · Cloudflare · Nginx |
-| DevX | Vite · ESLint · Jest · Vitest · Playwright · GitHub Actions |
-
-</details>
-
 ---
 
-### `~/metrics`
+## 📊 GitHub Stats
 
 <div align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=zddgg&show_icons=true&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=3fb950&text_color=8b949e&ring_color=1f6feb&theme=transparent" alt="stats"/>
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zddgg&layout=compact&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=8b949e&theme=transparent" alt="top langs"/>
-</div>
 
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=zddgg&bg_color=0d1117&color=58a6ff&line=1f6feb&point=3fb950&area=true&hide_border=true&theme=github-compact" width="100%" alt="activity graph"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=zddgg&show_icons=true&theme=tokyonight&include_all_commits=true"/>
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zddgg&layout=compact&theme=tokyonight"/>
+
 </div>
 
 ---
 
-### `~/contact`
-
-```bash
-$ connect --to zddgg
-> open a terminal at github.com/zddgg
-> follow the commits — they tell you what I care about
-```
+## 🔥 Contribution
 
 <div align="center">
 
-<a href="https://github.com/zddgg?tab=repositories"><img src="https://img.shields.io/badge/REPOSITORIES-181717?style=flat-square&logo=github&logoColor=white"/></a>
-&nbsp;
-<a href="https://github.com/zddgg?tab=followers"><img src="https://img.shields.io/badge/FOLLOW-58a6ff?style=flat-square&logo=github&logoColor=white"/></a>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=zddgg&theme=tokyo-night"/>
 
 </div>
 
-<br/>
+---
+
+## 🐍 Snake Animation
 
 <div align="center">
 
-<img src="https://komarev.com/ghpvc/?username=zddgg&label=VISITORS&color=58a6ff&style=flat-square&labelColor=0d1117" alt="visitors"/>
-&nbsp;
-<img src="https://img.shields.io/badge/%E2%9C%8D%EF%B8%8F%20crafted%20by-zddgg-58a6ff?style=flat-square&labelColor=0d1117" alt="crafted"/>
+<img src="https://raw.githubusercontent.com/zddgg/zddgg/output/github-contribution-grid-snake-dark.svg"/>
 
 </div>
 
-<!-- ── end of session ── -->
+---
+
+## 🚀 Featured Projects
+
+<a href="https://github.com/zddgg/claude-code">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=zddgg&repo=claude-code&theme=tokyonight"/>
+</a>
+
+<a href="https://github.com/zddgg/tiny-img">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=zddgg&repo=tiny-img&theme=tokyonight"/>
+</a>
+
+---
+
+## ☕ Random Dev Quote
+
+<div align="center">
+
+> "Code is poetry written for machines."
+
+</div>
+
+---
+
+<div align="center">
+
+<img src="https://komarev.com/ghpvc/?username=zddgg&label=Profile+Views&color=blueviolet"/>
+
+</div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=120&color=0:0F2027,100:2C5364"/>
