@@ -1,16 +1,6 @@
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&duration=3000&pause=1000&color=8A2BE2&center=true&vCenter=true&width=600&lines=Hello+World+👋;I'm+zddgg;Full+Stack+Developer;API+Gateway+Architect" />
-
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=250&text=ZDDGG&fontSize=60&fontAlignY=35&color=0:0F2027,50:203A43,100:2C5364&animation=fadeIn&fontColor=ffffff"/>
-
-</div>
-
----
-
-<div align="center">
-
-### 🚀 Full Stack Developer | API Gateway Architect
+<img src="./assets/hero.svg" alt="zddgg hero banner" width="100%"/>
 
 热爱技术｜持续探索｜创造有价值的软件
 
@@ -51,13 +41,21 @@ public class Zddgg {
 
 ---
 
+## 🛰️ Request Flow
+
+<div align="center">
+
+<img src="./assets/gateway.svg" alt="API gateway request flow" width="100%"/>
+
+</div>
+
+---
+
 ## 📊 GitHub Stats
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=zddgg&show_icons=true&theme=tokyonight&include_all_commits=true"/>
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zddgg&layout=compact&theme=tokyonight"/>
+<img src="./assets/stats.svg" alt="live GitHub stats terminal" width="640"/>
 
 </div>
 

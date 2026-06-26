@@ -1,0 +1,43 @@
+name: render svg assets
+
+on:
+  schedule:
+    # every 6 hours -> fresh stats + timestamp
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main, master]
+    paths:
+      - "scripts/generate-svg.mjs"
+      - ".github/workflows/render-assets.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate SVGs
+        env:
+          GH_USER: zddgg
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/generate-svg.mjs
+
+      - name: Commit assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/*.svg
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "chore: refresh profile SVG assets [skip ci]"
+            git push
+          fi

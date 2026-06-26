@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 320" width="920" height="320" font-family="'Segoe UI',Helvetica,Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0e1a"/>
+      <stop offset="0.5" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#11172a"/>
+    </linearGradient>
+    <radialGradient id="meshA" cx="0.2" cy="0.3" r="0.5">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+      <animate attributeName="cx" values="0.2;0.8;0.2" dur="14s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="0.3;0.7;0.3" dur="17s" repeatCount="indefinite"/>
+    </radialGradient>
+    <radialGradient id="meshB" cx="0.8" cy="0.7" r="0.5">
+      <stop offset="0" stop-color="#06b6d4" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#06b6d4" stop-opacity="0"/>
+      <animate attributeName="cx" values="0.8;0.15;0.8" dur="19s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="0.7;0.25;0.7" dur="13s" repeatCount="indefinite"/>
+    </radialGradient>
+    <radialGradient id="meshC" cx="0.5" cy="0.5" r="0.4">
+      <stop offset="0" stop-color="#ec4899" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ec4899" stop-opacity="0"/>
+      <animate attributeName="cx" values="0.5;0.2;0.85;0.5" dur="22s" repeatCount="indefinite"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1f2937" stroke-width="0.5" opacity="0.5"/>
+    </pattern>
+    <linearGradient id="txt" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="0.5" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#f472b6"/>
+      <animate attributeName="x1" values="0;1;0" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="1;2;1" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="920" height="320" fill="url(#bg)"/>
+  <rect width="920" height="320" fill="url(#meshA)"/>
+  <rect width="920" height="320" fill="url(#meshB)"/>
+  <rect width="920" height="320" fill="url(#meshC)"/>
+  <rect width="920" height="320" fill="url(#grid)"/>
+
+  <!-- HUD corner ticks -->
+  <g stroke="#22d3ee" stroke-width="1.5" fill="none" opacity="0.8">
+    <path d="M20 20 H60 M20 20 V60"/>
+    <path d="M900 20 H860 M900 20 V60"/>
+    <path d="M20 300 H60 M20 300 V260"/>
+    <path d="M900 300 H860 M900 300 V260"/>
+  </g>
+
+  <!-- scanline -->
+  <rect x="0" y="0" width="920" height="2" fill="#22d3ee" opacity="0.25">
+    <animate attributeName="y" values="0;320;0" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.05;0.35;0.05" dur="6s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- name -->
+  <text x="60" y="170" font-size="96" font-weight="800" fill="url(#txt)" filter="url(#glow)" letter-spacing="2">zddgg</text>
+
+  <!-- subtitle -->
+  <text x="62" y="210" font-size="20" fill="#94a3b8" letter-spacing="3">FULL-STACK ENGINEER  ·  API GATEWAY ARCHITECT</text>
+
+  <!-- online indicator -->
+  <g transform="translate(62,245)">
+    <circle cx="0" cy="0" r="5" fill="#22c55e">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="14" y="5" font-size="14" fill="#64748b" font-family="'JetBrains Mono',monospace">available for collab</text>
+  </g>
+
+  <!-- live timestamp -->
+  <text x="860" y="285" font-size="12" fill="#475569" text-anchor="end" font-family="'JetBrains Mono',monospace">2026-06-26 07:06 UTC</text>
+</svg>
