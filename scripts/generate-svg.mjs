@@ -194,81 +194,6 @@ ${rowsXml}
 </svg>`;
 }
 
-// ───────────────────────── GATEWAY VIZ ─────────────────────────
-function gatewaySVG() {
-  // client -> gateway -> 4 services
-  const services = ["auth", "user", "order", "pay"];
-  const svcX = 760;
-  const svcStartY = 60;
-  const svcGap = 60;
-  const gatewayX = 420;
-  const gatewayY = 160;
-  const clientX = 80;
-  const clientY = 160;
-
-  const svcNodes = services
-    .map((name, i) => {
-      const y = svcStartY + i * svcGap;
-      return `
-    <line x1="${gatewayX + 60}" y1="${gatewayY}" x2="${svcX - 40}" y2="${y}" stroke="#334155" stroke-width="1.5" stroke-dasharray="6 6">
-      <animate attributeName="stroke-dashoffset" values="0;-24" dur="${0.8 + i * 0.2}s" repeatCount="indefinite"/>
-    </line>
-    <g transform="translate(${svcX},${y})">
-      <circle r="6" fill="#22d3ee">
-        <animate attributeName="r" values="6;9;6" dur="${1.5 + i * 0.3}s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="1;0.5;1" dur="${1.5 + i * 0.3}s" repeatCount="indefinite"/>
-      </circle>
-      <rect x="10" y="-14" width="90" height="28" rx="6" fill="#0d1117" stroke="#1f6feb"/>
-      <text x="55" y="4" font-size="12" fill="#93c5fd" text-anchor="middle" font-family="'JetBrains Mono',monospace">${name}.svc</text>
-    </g>`;
-    })
-    .join("\n");
-
-  return `<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 280" width="920" height="280" font-family="'Segoe UI',Helvetica,Arial,sans-serif">
-  <defs>
-    <linearGradient id="gbg" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#0d1117"/>
-      <stop offset="1" stop-color="#0a0e1a"/>
-    </linearGradient>
-    <filter id="gglow"><feGaussianBlur stdDeviation="4"/></filter>
-  </defs>
-
-  <rect width="920" height="280" fill="url(#gbg)"/>
-  <text x="20" y="30" font-size="12" fill="#475569" font-family="'JetBrains Mono',monospace">// request flow</text>
-
-  <!-- client -> gateway (flowing) -->
-  <line x1="${clientX + 40}" y1="${clientY}" x2="${gatewayX - 50}" y2="${gatewayY}" stroke="#1f6feb" stroke-width="2" stroke-dasharray="8 6">
-    <animate attributeName="stroke-dashoffset" values="0;-28" dur="1s" repeatCount="indefinite"/>
-  </line>
-
-  <!-- client node -->
-  <g transform="translate(${clientX},${clientY})">
-    <circle r="40" fill="#0d1117" stroke="#a78bfa" stroke-width="2"/>
-    <circle r="40" fill="none" stroke="#a78bfa" stroke-width="2" opacity="0.5">
-      <animate attributeName="r" values="40;52;40" dur="2.5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.5;0;0.5" dur="2.5s" repeatCount="indefinite"/>
-    </circle>
-    <text y="5" font-size="12" fill="#c4b5fd" text-anchor="middle" font-family="'JetBrains Mono',monospace">CLIENT</text>
-  </g>
-
-  <!-- gateway node -->
-  <g transform="translate(${gatewayX},${gatewayY})">
-    <rect x="-50" y="-34" width="100" height="68" rx="10" fill="#0d1117" stroke="#22d3ee" stroke-width="2" filter="url(#gglow)" opacity="0.9"/>
-    <rect x="-50" y="-34" width="100" height="68" rx="10" fill="none" stroke="#22d3ee" stroke-width="2"/>
-    <text y="-4" font-size="13" fill="#67e8f9" text-anchor="middle" font-family="'JetBrains Mono',monospace">API</text>
-    <text y="14" font-size="13" fill="#67e8f9" text-anchor="middle" font-family="'JetBrains Mono',monospace">GATEWAY</text>
-    <circle cx="0" cy="0" r="3" fill="#22c55e">
-      <animate attributeName="opacity" values="1;0.2;1" dur="0.7s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-
-${svcNodes}
-
-  <text x="900" y="265" font-size="10" fill="#334155" text-anchor="end" font-family="'JetBrains Mono',monospace">edge · resilient · observable</text>
-</svg>`;
-}
-
 // ───────────────────────── MAIN ─────────────────────────
 async function main() {
   await mkdir(OUT_DIR, { recursive: true });
@@ -278,7 +203,6 @@ async function main() {
   const files = {
     "hero.svg": heroSVG(stats),
     "stats.svg": statsSVG(stats),
-    "gateway.svg": gatewaySVG(),
   };
   for (const [name, content] of Object.entries(files)) {
     await writeFile(join(OUT_DIR, name), content, "utf8");
